@@ -1,0 +1,1147 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>지니</title>
+
+
+
+
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+
+
+
+
+
+    <script src="lib/jquery-3.7.0.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/main.js"></script>
+
+</head>
+
+<body>
+    <div class="top">
+        <p>TOP</p>
+    </div><!-- .top end -->
+
+
+
+
+
+    <header>
+        <div class="inner">
+            <figure class="menu_open"><img src="img/menu.png" alt="메뉴열기" /></figure>
+            <div class="center">
+                <h1><a href="#"><img src="img/logo_genie.png" alt="메인로고" /></a></h1>
+                <div class="search">
+                    <div class="search_bar">
+                        <input type="text" placeholder="늦은밤, 혼자 듣고 싶은 잔잔한 POP" />
+                        <input type="submit" value="검색" />
+                    </div><!-- search_bar end -->
+                    <div class="search_tab">
+                        <ul>
+                            <li class="on">인기검색어</li>
+                            <li>최근검색어</li>
+                        </ul>
+                        <div class="popular on">
+                            <ul>
+                                <li>
+                                    <span>1</span>
+                                    <p>릴러말즈</p>
+                                </li>
+                                <li>
+                                    <span>2</span>
+                                    <p>이럴거면</p>
+                                </li>
+                                <li>
+                                    <span>3</span>
+                                    <p>다이나믹 듀오</p>
+                                </li>
+                                <li>
+                                    <span>4</span>
+                                    <p>서동현</p>
+                                </li>
+                                <li>
+                                    <span>5</span>
+                                    <p>악뮤</p>
+                                </li>
+                                <li>
+                                    <span>6</span>
+                                    <p>잔나비</p>
+                                </li>
+                                <li>
+                                    <span>7</span>
+                                    <p>디오</p>
+                                </li>
+                                <li>
+                                    <span>8</span>
+                                    <p>아이유</p>
+                                </li>
+                                <li>
+                                    <span>9</span>
+                                    <p>라이즈</p>
+                                </li>
+                                <li>
+                                    <span>10</span>
+                                    <p>화사</p>
+                                </li>
+                            </ul>
+                            <p class="search_close">닫기</p>
+                        </div><!-- .popular -->
+                        <div class="recent">
+                            <p>최근 검색어가 없다고 합시다</p>
+                            <ul>
+                                <li>전체삭제</li>
+                                <li class="search_close">닫기</li>
+                            </ul>
+                        </div><!-- .recent -->
+                    </div><!-- .search_tab end -->
+                </div><!-- .search end -->
+            </div><!-- .center end -->
+            <figure class="user"><img src="img/user.png" alt="회원" /></figure>
+        </div><!-- .inner end -->
+    </header>
+
+
+
+
+
+    <nav>
+        <div class="inner">
+            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"
+                class="menu_close">
+                <path
+                    d="M24.9329 21.8871L15.3663 12.4131L24.8371 2.85687L21.8871 -0.0670834L12.4183 9.49437L2.86001 0.0277083L-0.0670776 2.95479L9.50167 12.4392L0.027714 22.0058L2.9548 24.9329L12.4465 15.3579L22.009 24.8371L24.9329 21.8871Z"
+                    fill="white" />
+            </svg>
+            <ul>
+                <li class="depth1">
+                    <a href="#chart">지니차트</a>
+                    <ul class="depth2">
+                        <li><a href="#">TOP200</a></li>
+                        <li><a href="#">장르별 차트</a></li>
+                        <li><a href="#">시대별 차트</a></li>
+                        <li><a href="#">뮤직비디오 차트</a></li>
+                    </ul><!-- .depth2 end -->
+                </li><!-- .depth1 end -->
+
+                <li class="depth1">
+                    <a href="#update">최신음악</a>
+                    <ul class="depth2">
+                        <li><a href="#">최신 곡</a></li>
+                        <li><a href="#">최신 앨범</a></li>
+                    </ul><!-- .depth2 end -->
+                </li><!-- .depth1 end -->
+
+                <li class="depth1">
+                    <a href="#">장르음악</a>
+                    <ul class="depth2">
+                        <li><a href="#">가요</a></li>
+                        <li><a href="#">POP</a></li>
+                        <li><a href="#">OST</a></li>
+                        <li><a href="#">트롯</a></li>
+                        <li><a href="#">EDM</a></li>
+                        <li><a href="#">JAZZ</a></li>
+                        <li><a href="#">CLASSIC</a></li>
+                        <li><a href="#">JPOP</a></li>
+                        <li><a href="#">CCM</a></li>
+                    </ul><!-- .depth2 end -->
+                </li><!-- .depth1 end -->
+
+                <li class="depth1">
+                    <a href="#video">영상</a>
+                    <ul class="depth2">
+                        <li><a href="#">홈</a></li>
+                        <li><a href="#">뮤직비디오</a></li>
+                        <li><a href="#">뮤지션</a></li>
+                        <li><a href="#">이색영상</a></li>
+                    </ul><!-- .depth2 end -->
+                </li><!-- .depth1 end -->
+
+                <li class="depth1">
+                    <a href="#editor">추천</a>
+                    <ul class="depth2">
+                        <li><a href="#">추천</a></li>
+                        <li><a href="#">인기</a></li>
+                        <li><a href="#">태그</a></li>
+                        <li><a href="#">히스토리</a></li>
+                    </ul><!-- .depth2 end -->
+                </li><!-- .depth1 end -->
+
+                <li class="depth1">
+                    <a href="#">매거진</a>
+                    <ul class="depth2">
+                        <li><a href="#">클래식공감</a></li>
+                        <li><a href="#">스페셜</a></li>
+                        <li><a href="#">지니뮤직 챌린지</a></li>
+                        <li><a href="#">방송</a></li>
+                        <li><a href="#">뮤직리포트</a></li>
+                        <li><a href="#">이주의 앨범</a></li>
+                    </ul><!-- .depth2 end -->
+                </li><!-- .depth1 end -->
+
+                <li class="depth1">
+                    <a href="#">뮤직허그</a>
+                </li><!-- .depth1 end -->
+
+            </ul>
+        </div><!-- .inner end -->
+    </nav>
+
+
+
+
+
+    <div class="main_visual">
+        <!-- Swiper -->
+        <div class="swiper mainSwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <figure><iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/EIz09kLzN9k?si=3-aZT46f0fgNLFbs"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe></figure>
+                </div>
+
+                <div class="swiper-slide">
+                    <figure><iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/iuIzniSa1Hs?si=zPUjiViMF1WT6Bcb"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe></figure>
+                </div>
+
+                <div class="swiper-slide">
+                    <figure><iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/3kGAlp_PNUg?si=1mSABwaJoCXg-2Rr"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe></figure>
+                </div>
+
+                <div class="swiper-slide">
+                    <figure><iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/jOTfBlKSQYY?si=HwKB1w57823kO-0a"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe></figure>
+                </div>
+
+                <div class="swiper-slide">
+                    <figure><iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/yFlxYHjHYAw?si=Wy5fOQGjl-X9BMrZ"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe></figure>
+                </div>
+
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div><!-- .main_visual end -->
+
+
+
+
+
+    <section class="chart" id="chart">
+        <div class="inner">
+            <div class="title">
+                <h2>실시간 차트</h2>
+                <div class="dateTime">
+                    <div class="date">
+                        <span class="year"></span>.<span class="month"></span>.<span class="day"></span>
+                    </div><!-- .date end -->
+                    <div class="time"></div>
+                </div><!-- .dateTime end -->
+            </div><!-- .title end -->
+            <a href="#" class="more">
+                <p>전체보기</p>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M2.66666 0.503333L12.2493 8L2.66666 15.4793L3.07932 16L13.3333 8L3.07266 0L2.66666 0.503333Z"
+                        fill="#333333" />
+                </svg>
+            </a><!-- .more end -->
+
+            <div class="list">
+                <div class="left pc">
+                    <div class="album">
+                        <div class="art">
+                            <figure><img src="#" alt="#" /></figure>
+                            <div class="back">
+                                <h3>#</h3>
+                                <figure><img src="img/play_big.png" alt="재생" /></figure>
+                                <p>#</p>
+                                <span>#</span>
+                            </div><!-- .back end -->
+                        </div><!-- .art end -->
+                        <span class="rank1 on">1</span>
+                        <span class="rank2">2</span>
+                        <span class="rank3">3</span>
+                    </div><!-- .album end -->
+                </div><!-- .left end -->
+
+                <div class="right">
+                    <ul class="rightList">
+                        <li class="item on">
+                            <span>1</span>
+                            <div class="song">
+                                <h3>Love Lee</h3>
+                                <figure><img src="img/play_small_color.png" alt="재생" /></figure>
+                            </div><!-- .song end -->
+                            <p>AKMU (악뮤)</p>
+                            <div class="invisible">
+                                <img src="img/chart1.jpg" alt="차트1" />
+                                <span>Love Lee</span>
+                            </div><!-- .invisible end -->
+                        </li><!-- .item end 1 -->
+
+                        <li class="item">
+                            <span>2</span>
+                            <div class="song">
+                                <h3>Smoke (Prod. by DynamicDuo & Padi)</h3>
+                                <figure><img src="img/play_small_color.png" alt="재생" /></figure>
+                            </div><!-- .song end -->
+                            <p>다이나믹 듀오 & 이영지</p>
+                            <div class="invisible">
+                                <img src="img/chart2.jpg" alt="차트2" />
+                                <span>스트릿 우먼 파이터2 (SWF2) 계급미션</span>
+                            </div><!-- .invisible end -->
+                        </li><!-- .item end 2 -->
+
+                        <li class="item">
+                            <span>3</span>
+                            <div class="song">
+                                <h3>후라이의 꿈</h3>
+                                <figure><img src="img/play_small_color.png" alt="재생" /></figure>
+                            </div><!-- .song end -->
+                            <p>AKMU (악뮤)</p>
+                            <div class="invisible">
+                                <img src="img/chart3.jpg" alt="차트3" />
+                                <span>Love Lee</span>
+                            </div><!-- .invisible end -->
+                        </li><!-- .item end 3 -->
+
+                        <li class="item">
+                            <span>4</span>
+                            <div class="song">
+                                <h3>ETA</h3>
+                                <figure><img src="img/play_small_color.png" alt="재생" /></figure>
+                            </div><!-- .song end -->
+                            <p>NewJeans</p>
+                            <div class="invisible">
+                                <img src="img/chart4.jpg" alt="차트4" />
+                                <span>NewJeans 2nd EP 'Get Up'</span>
+                            </div><!-- .invisible end -->
+                        </li><!-- .item end 4 -->
+
+                        <li class="item">
+                            <span>5</span>
+                            <div class="song">
+                                <h3>Seven (Feat. Latto) (Clean Ver.)</h3>
+                                <figure><img src="img/play_small_color.png" alt="재생" /></figure>
+                            </div><!-- .song end -->
+                            <p>정국</p>
+                            <div class="invisible">
+                                <img src="img/chart5.jpg" alt="차트5" />
+                                <span>Seven (Clean Ver.)</span>
+                            </div><!-- .invisible end -->
+                        </li><!-- .item end 5 -->
+
+                        <li class="item">
+                            <span>6</span>
+                            <div class="song">
+                                <h3>헤어지자 말해요</h3>
+                                <figure><img src="img/play_small_color.png" alt="재생" /></figure>
+                            </div><!-- .song end -->
+                            <p>박재정</p>
+                            <div class="invisible">
+                                <img src="img/chart6.jpg" alt="차트6" />
+                                <span>1집 Alone</span>
+                            </div><!-- .invisible end -->
+                        </li><!-- .item end 6 -->
+
+                        <li class="item">
+                            <span>7</span>
+                            <div class="song">
+                                <h3>Super Shy</h3>
+                                <figure><img src="img/play_small_color.png" alt="재생" /></figure>
+                            </div><!-- .song end -->
+                            <p>NewJeans</p>
+                            <div class="invisible">
+                                <img src="img/chart7.jpg" alt="차트7" />
+                                <span>NewJeans 2nd EP 'Get Up'</span>
+                            </div><!-- .invisible end -->
+                        </li><!-- .item end 7 -->
+
+                        <li class="item">
+                            <span>8</span>
+                            <div class="song">
+                                <h3>I AM</h3>
+                                <figure><img src="img/play_small_color.png" alt="재생" /></figure>
+                            </div><!-- .song end -->
+                            <p>IVE (아이브)</p>
+                            <div class="invisible">
+                                <img src="img/chart8.jpg" alt="차트8" />
+                                <span>I've IVE</span>
+                            </div><!-- .invisible end -->
+                        </li><!-- .item end 8 -->
+
+                        <li class="item">
+                            <span>9</span>
+                            <div class="song">
+                                <h3>Fast Forward</h3>
+                                <figure><img src="img/play_small_color.png" alt="재생" /></figure>
+                            </div><!-- .song end -->
+                            <p>전소미</p>
+                            <div class="invisible">
+                                <img src="img/chart9.jpg" alt="차트9" />
+                                <span>GAME PLAN</span>
+                            </div><!-- .invisible end -->
+                        </li><!-- .item end 9 -->
+
+                        <li class="item">
+                            <span>10</span>
+                            <div class="song">
+                                <h3>퀸카 (Queencard)</h3>
+                                <figure><img src="img/play_small_color.png" alt="재생" /></figure>
+                            </div><!-- .song end -->
+                            <p>(여자)아이들</p>
+                            <div class="invisible">
+                                <img src="img/chart10.jpg" alt="차트10" />
+                                <span>I feel</span>
+                            </div><!-- .invisible end -->
+                        </li><!-- .item end 10 -->
+
+                    </ul><!-- .rightList end -->
+                </div><!-- .right end -->
+
+            </div><!-- .list end -->
+        </div><!-- .inner end -->
+    </section><!-- .chart end -->
+
+
+
+
+
+    <section class="update" id="update">
+        <div class="inner">
+            <div class="title">
+                <h2>최신음악</h2>
+                <ul>
+                    <li class="on">국내</li>
+                    <li>해외</li>
+                </ul>
+            </div><!-- .title end -->
+            <a href="#" class="more">
+                <p>전체보기</p>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M2.66666 0.503333L12.2493 8L2.66666 15.4793L3.07932 16L13.3333 8L3.07266 0L2.66666 0.503333Z"
+                        fill="#333333" />
+                </svg>
+            </a><!-- .more end -->
+        </div><!-- .inner end -->
+
+        <!-- Swiper -->
+        <div class="swiper contSwiperA on">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="art">
+                        <figure><img src="img/domestic1_cd.png" alt="최신_국내1" /></figure>
+                        <div class="back">
+                            <h3>Back for More (More Edition)</h3>
+                            <figure><img src="img/play_big.png" alt="재생" /></figure>
+                            <p>투모로우바이투게더 & Anitta</p>
+                            <span>Back for More (More Edition)</span>
+                        </div><!-- .back end -->
+                    </div><!-- .art end -->
+                    <div class="song">
+                        <h3>Back for More (More Edition)</h3>
+                        <p>투모로우바이투게더 & Anitt</p>
+                    </div><!-- .song end -->
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="art">
+                        <figure><img src="img/domestic2_cd.png" alt="최신_국내2" /></figure>
+                        <div class="back">
+                            <h3>그대만 있다면</h3>
+                            <figure><img src="img/play_big.png" alt="재생" /></figure>
+                            <p>재연 (SWAY)</p>
+                            <span>그대만 있다면</span>
+                        </div><!-- .back end -->
+                    </div><!-- .art end -->
+                    <div class="song">
+                        <h3>그대만 있다면</h3>
+                        <p>재연 (SWAY)</p>
+                    </div><!-- .song end -->
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="art">
+                        <figure><img src="img/domestic3_cd.png" alt="최신_국내3" /></figure>
+                        <div class="back">
+                            <h3>별밤의 왈츠</h3>
+                            <figure><img src="img/play_big.png" alt="재생" /></figure>
+                            <p>이구이 (IGWI)</p>
+                            <span>별밤의 왈츠</span>
+                        </div><!-- .back end -->
+                    </div><!-- .art end -->
+                    <div class="song">
+                        <h3>별밤의 왈츠</h3>
+                        <p>이구이 (IGWI)</p>
+                    </div><!-- .song end -->
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="art">
+                        <figure><img src="img/domestic4_cd.png" alt="최신_국내4" /></figure>
+                        <div class="back">
+                            <h3>명곡제작소 EPISODE 5</h3>
+                            <figure><img src="img/play_big.png" alt="재생" /></figure>
+                            <p>Various Artists</p>
+                            <span>명곡제작소 EPISODE 5</span>
+                        </div><!-- .back end -->
+                    </div><!-- .art end -->
+                    <div class="song">
+                        <h3>명곡제작소 EPISODE 5</h3>
+                        <p>Various Artists</p>
+                    </div><!-- .song end -->
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="art">
+                        <figure><img src="img/domestic5_cd.png" alt="최신_국내5" /></figure>
+                        <div class="back">
+                            <h3>bright #12</h3>
+                            <figure><img src="img/play_big.png" alt="재생" /></figure>
+                            <p>Various Artists</p>
+                            <span>bright #12</span>
+                        </div><!-- .back end -->
+                    </div><!-- .art end -->
+                    <div class="song">
+                        <h3>bright #12</h3>
+                        <p>Various Artists</p>
+                    </div><!-- .song end -->
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="art">
+                        <figure><img src="img/domestic6_cd.png" alt="최신_국내6" /></figure>
+                        <div class="back">
+                            <h3>베스트 셀러 (Best Seller)</h3>
+                            <figure><img src="img/play_big.png" alt="재생" /></figure>
+                            <p>앤츠 (Ants)</p>
+                            <span>베스트 셀러 (Best Seller)</span>
+                        </div><!-- .back end -->
+                    </div><!-- .art end -->
+                    <div class="song">
+                        <h3>베스트 셀러 (Best Seller)</h3>
+                        <p>앤츠 (Ants)</p>
+                    </div><!-- .song end -->
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="art">
+                        <figure><img src="img/domestic7_cd.png" alt="최신_국내7" /></figure>
+                        <div class="back">
+                            <h3>Airplane mode</h3>
+                            <figure><img src="img/play_big.png" alt="재생" /></figure>
+                            <p>SEMEIK</p>
+                            <span>Airplane mode</span>
+                        </div><!-- .back end -->
+                    </div><!-- .art end -->
+                    <div class="song">
+                        <h3>Airplane mode</h3>
+                        <p>SEMEIK</p>
+                    </div><!-- .song end -->
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="art">
+                        <figure><img src="img/domestic8_cd.png" alt="최신_국내8" /></figure>
+                        <div class="back">
+                            <h3>The Riff Part.1 (Live Clip)</h3>
+                            <figure><img src="img/play_big.png" alt="재생" /></figure>
+                            <p>허클베리핀 (Huckleberryfinn)</p>
+                            <span>The Riff Part.1 (Live Clip)</span>
+                        </div><!-- .back end -->
+                    </div><!-- .art end -->
+                    <div class="song">
+                        <h3>The Riff Part.1 (Live Clip)</h3>
+                        <p>허클베리핀 (Huckleberryfinn)</p>
+                    </div><!-- .song end -->
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="art">
+                        <figure><img src="img/domestic9_cd.png" alt="최신_국내9" /></figure>
+                        <div class="back">
+                            <h3>사랑 참 어렵다</h3>
+                            <figure><img src="img/play_big.png" alt="재생" /></figure>
+                            <p>더 데이지 (The Daisy)</p>
+                            <span>사랑 참 어렵다</span>
+                        </div><!-- .back end -->
+                    </div><!-- .art end -->
+                    <div class="song">
+                        <h3>사랑 참 어렵다</h3>
+                        <p>더 데이지 (The Daisy)</p>
+                    </div><!-- .song end -->
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="art">
+                        <figure><img src="img/domestic10_cd.png" alt="최신_국내10" /></figure>
+                        <div class="back">
+                            <h3>Hold me Kiss me Love me</h3>
+                            <figure><img src="img/play_big.png" alt="재생" /></figure>
+                            <p>레몬시티 (Lemon City)</p>
+                            <span>Hold me Kiss me Love me</span>
+                        </div><!-- .back end -->
+                    </div><!-- .art end -->
+                    <div class="song">
+                        <h3>Hold me Kiss me Love me</h3>
+                        <p>레몬시티 (Lemon City)</p>
+                    </div><!-- .song end -->
+                </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="swiper contSwiperB">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="art">
+                        <figure><img src="img/overseas1_cd.png" alt="최신_해외1" /></figure>
+                        <div class="back">
+                            <h3>REVAMPED</h3>
+                            <figure><img src="img/play_big.png" alt="재생" /></figure>
+                            <p>Demi Lovato</p>
+                            <span>REVAMPED</span>
+                        </div><!-- .back end -->
+                    </div><!-- .art end -->
+                    <div class="song">
+                        <h3>REVAMPED</h3>
+                        <p>Demi Lovato</p>
+                    </div><!-- .song end -->
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="art">
+                        <figure><img src="img/overseas2_cd.png" alt="최신_해외2" /></figure>
+                        <div class="back">
+                            <h3>greedy</h3>
+                            <figure><img src="img/play_big.png" alt="재생" /></figure>
+                            <p>Tate McRae</p>
+                            <span>greedy</span>
+                        </div><!-- .back end -->
+                    </div><!-- .art end -->
+                    <div class="song">
+                        <h3>greedy</h3>
+                        <p>Tate McRae</p>
+                    </div><!-- .song end -->
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="art">
+                        <figure><img src="img/overseas3_cd.png" alt="최신_해외3" /></figure>
+                        <div class="back">
+                            <h3>High Concept</h3>
+                            <figure><img src="img/play_big.png" alt="재생" /></figure>
+                            <p>salem ilese</p>
+                            <span>High Concept</span>
+                        </div><!-- .back end -->
+                    </div><!-- .art end -->
+                    <div class="song">
+                        <h3>High Concept</h3>
+                        <p>salem ilese</p>
+                    </div><!-- .song end -->
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="art">
+                        <figure><img src="img/overseas4_cd.png" alt="최신_해외4" /></figure>
+                        <div class="back">
+                            <h3>Why Am I Treated So Bad (From 'Norah Jones is Playing Along' Podcast)</h3>
+                            <figure><img src="img/play_big.png" alt="재생" /></figure>
+                            <p>Norah Jones & Questlove</p>
+                            <span>Why Am I Treated So Bad (From 'Norah Jones is Playing Along' Podcast)</span>
+                        </div><!-- .back end -->
+                    </div><!-- .art end -->
+                    <div class="song">
+                        <h3>Why Am I Treated So Bad (From 'Norah Jones is Playing Along' Podcast)</h3>
+                        <p>Norah Jones & Questlove</p>
+                    </div><!-- .song end -->
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="art">
+                        <figure><img src="img/overseas5_cd.png" alt="최신_해외5" /></figure>
+                        <div class="back">
+                            <h3>let me know</h3>
+                            <figure><img src="img/play_big.png" alt="재생" /></figure>
+                            <p>Gareth.T</p>
+                            <span>let me know</span>
+                        </div><!-- .back end -->
+                    </div><!-- .art end -->
+                    <div class="song">
+                        <h3>let me know</h3>
+                        <p>Gareth.T</p>
+                    </div><!-- .song end -->
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="art">
+                        <figure><img src="img/overseas6_cd.png" alt="최신_해외6" /></figure>
+                        <div class="back">
+                            <h3>BURY YOU</h3>
+                            <figure><img src="img/play_big.png" alt="재생" /></figure>
+                            <p>Ari Abdul</p>
+                            <span>BURY YOU</span>
+                        </div><!-- .back end -->
+                    </div><!-- .art end -->
+                    <div class="song">
+                        <h3>BURY YOU</h3>
+                        <p>Ari Abdul</p>
+                    </div><!-- .song end -->
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="art">
+                        <figure><img src="img/overseas7_cd.png" alt="최신_해외7" /></figure>
+                        <div class="back">
+                            <h3>Cross Country : The Extra Mile</h3>
+                            <figure><img src="img/play_big.png" alt="재생" /></figure>
+                            <p>BRELAND</p>
+                            <span>Cross Country : The Extra Mile</span>
+                        </div><!-- .back end -->
+                    </div><!-- .art end -->
+                    <div class="song">
+                        <h3>Cross Country : The Extra Mile</h3>
+                        <p>BRELAND</p>
+                    </div><!-- .song end -->
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="art">
+                        <figure><img src="img/overseas8_cd.png" alt="최신_해외8" /></figure>
+                        <div class="back">
+                            <h3>Expensive</h3>
+                            <figure><img src="img/play_big.png" alt="재생" /></figure>
+                            <p>Andy Grammer & Pentatonix</p>
+                            <span>Expensive</span>
+                        </div><!-- .back end -->
+                    </div><!-- .art end -->
+                    <div class="song">
+                        <h3>Expensive</h3>
+                        <p>Andy Grammer & Pentatonix</p>
+                    </div><!-- .song end -->
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="art">
+                        <figure><img src="img/overseas9_cd.png" alt="최신_해외9" /></figure>
+                        <div class="back">
+                            <h3>The Land Is Inhospitable and So Are We</h3>
+                            <figure><img src="img/play_big.png" alt="재생" /></figure>
+                            <p>Mitski</p>
+                            <span>The Land Is Inhospitable and So Are We</span>
+                        </div><!-- .back end -->
+                    </div><!-- .art end -->
+                    <div class="song">
+                        <h3>The Land Is Inhospitable and So Are We</h3>
+                        <p>Mitski</p>
+                    </div><!-- .song end -->
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="art">
+                        <figure><img src="img/overseas10_cd.png" alt="최신_해외10" /></figure>
+                        <div class="back">
+                            <h3>Te Menti</h3>
+                            <figure><img src="img/play_big.png" alt="재생" /></figure>
+                            <p>Ozuna & Saiko & Ovy On the Drums</p>
+                            <span>Te Menti</span>
+                        </div><!-- .back end -->
+                    </div><!-- .art end -->
+                    <div class="song">
+                        <h3>Te Menti</h3>
+                        <p>Ozuna & Saiko & Ovy On the Drums</p>
+                    </div><!-- .song end -->
+                </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </section><!-- .update end -->
+
+
+
+
+
+    <section class="video" id="video">
+        <div class="inner">
+            <div class="title">
+                <h2>영상</h2>
+                <ul>
+                    <li class="on">추천</li>
+                    <li>HOT</li>
+                </ul>
+            </div><!-- .title end -->
+
+            <div class="listA on">
+                <div class="count">
+                    <figure class="prev"><img src="img/left_cont.png" alt="이전" /></figure>
+                    <p>
+                        <span class="num_current">1</span>
+                        <span>/</span>
+                        <span class="num_all">#</span>
+                    </p>
+                    <figure class="next"><img src="img/right_cont.png" alt="다음" /></figure>
+                </div><!-- count end -->
+
+                <a href="#" class="item on">
+                    <figure><iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/R0KS2_vW_M4?si=Kmvzg-JrvYUrkxfz"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe></figure>
+                    <div class="text">
+                        <h3>가까이 하고 싶은 그대</h3>
+                        <p>SOLE (쏠)</p>
+                    </div><!-- .text end -->
+                    <span>M/V</span>
+                </a><!-- .item end -->
+
+                <a href="#" class="item on">
+                    <figure><iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/jNYVbmVIP4A?si=d5nJ5Os7ARgFOxyW"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe></figure>
+                    <div class="text">
+                        <h3>Somebody</h3>
+                        <p>디오 (D.O.)</p>
+                    </div><!-- .text end -->
+                    <span>M/V</span>
+                </a><!-- .item end -->
+
+                <a href="#" class="item on">
+                    <figure><iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/koCRUrYI9yM?si=8J1ZSx8Rx3h1z0_8"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe></figure>
+                    <div class="text">
+                        <h3>TROUBLE (MV Teaser 2)</h3>
+                        <p>EVNNE (이븐)</p>
+                    </div><!-- .text end -->
+                    <span>Teaser</span>
+                </a><!-- .item end -->
+
+                <a href="#" class="item">
+                    <figure><iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/bUtULc1IBrM?si=QlUgy6k-lGC3WX6V"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe></figure>
+                    <div class="text">
+                        <h3>BIG WALK</h3>
+                        <p>TEAM NY</p>
+                    </div><!-- .text end -->
+                    <span>M/V</span>
+                </a><!-- .item end -->
+
+                <a href="#" class="item">
+                    <figure><iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/35FJrQnPp_0?si=JdWdGcZkYmajNVmM"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe></figure>
+                    <div class="text">
+                        <h3>Baila Conmigo (MV Teaser 1)</h3>
+                        <p>디오 (D.O.)</p>
+                    </div><!-- .text end -->
+                    <span>Teaser</span>
+                </a><!-- .item end -->
+
+                <a href="#" class="item">
+                    <figure><iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/1sBPlYQdurY?si=F_gp_JBWBhD-iISE"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe></figure>
+                    <div class="text">
+                        <h3>넘넘넘 (Feat. 범키 & Ztash)</h3>
+                        <p>SWAY</p>
+                    </div><!-- .text end -->
+                    <span>M/V</span>
+                </a><!-- .item end -->
+
+            </div><!-- .list end -->
+
+            <div class="listB">
+                <div class="count">
+                    <figure class="prev"><img src="img/left_cont.png" alt="이전" /></figure>
+                    <p>
+                        <span class="num_current">1</span>
+                        <span>/</span>
+                        <span class="num_all">#</span>
+                    </p>
+                    <figure class="next"><img src="img/right_cont.png" alt="다음" /></figure>
+                </div><!-- .count end -->
+
+                <a href="#" class="item on">
+                    <figure><iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/EIz09kLzN9k?si=3-aZT46f0fgNLFbs"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe></figure>
+                    <div class="text">
+                        <h3>Love Lee</h3>
+                        <p>AKMU (악뮤)</p>
+                    </div><!-- .text end -->
+                    <span>M/V</span>
+                </a><!-- .item end -->
+
+                <a href="#" class="item on">
+                    <figure><iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/Crq_fRV0O0E?si=LLqOb4EM4GpIAL3I"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe></figure>
+                    <div class="text">
+                        <h3>I Love My Body</h3>
+                        <p>화사 (HWASA)</p>
+                    </div><!-- .text end -->
+                    <span>M/V</span>
+                </a><!-- .item end -->
+
+                <a href="#" class="item on">
+                    <figure><iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/_GgIt2EFHV8?si=q1z5Fm-U-z0ZIhGy"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe></figure>
+                    <div class="text">
+                        <h3>Fast Forward</h3>
+                        <p>전소미</p>
+                    </div><!-- .text end -->
+                    <span>M/V</span>
+                </a><!-- .item end -->
+
+                <a href="#" class="item">
+                    <figure><iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/3kGAlp_PNUg?si=1mSABwaJoCXg-2Rr"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe></figure>
+                    <div class="text">
+                        <h3>후라이의 꿈</h3>
+                        <p>AKMU (악뮤)</p>
+                    </div><!-- .text end -->
+                    <span>M/V</span>
+                </a><!-- .item end -->
+
+                <a href="#" class="item">
+                    <figure><iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/7HDeem-JaSY?si=3qFk4i6hfvGQL3Cg"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe></figure>
+                    <div class="text">
+                        <h3>퀸카 (Queencard) (Official M/V)</h3>
+                        <p>(여자)아이들</p>
+                    </div><!-- .text end -->
+                    <span>M/V</span>
+                </a><!-- .item end -->
+
+                <a href="#" class="item">
+                    <figure><iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/okVTSehE414?si=fI_QRA-wpqkSQkSA"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe></figure>
+                    <div class="text">
+                        <h3>I WANT</h3>
+                        <p>IVE (아이브)</p>
+                    </div><!-- .text end -->
+                    <span>M/V</span>
+                </a><!-- .item end -->
+
+            </div><!-- .list end -->
+
+        </div><!-- .inner end -->
+    </section><!-- .video end -->
+
+
+
+
+
+    <section class="editor" id="editor">
+        <div class="inner">
+            <div class="title">
+                <h2>에디터 추천</h2>
+            </div><!-- .title end -->
+
+            <div class="list">
+                <a href="#" class="item on">
+                    <figure><img src="img/editor1.jpg" alt="에디터1" /></figure>
+                    <div class="text">
+                        <p>선우예권의 다채로운 곡 해석</p>
+                        <h3>선우예권, 라흐마니노프로 돌아오다</h3>
+                    </div><!-- .text end -->
+                    <span>클래식 공감</span>
+                    <div class="back">
+                        <figure><img src="img/play_big.png" alt="재생" /></figure>
+                    </div><!-- .back end -->
+                </a><!-- .item end -->
+
+                <a href="#" class="item on">
+                    <figure><img src="img/editor2.jpg" alt="에디터2" /></figure>
+                    <div class="text">
+                        <p>눅눅해진 마음들을 떠나보내는 노래들</p>
+                        <h3>POP 스튜디오 #69 - 이런 날이 돌아올 줄 알았지</h3>
+                    </div><!-- .text end -->
+                    <span>POP 컬렉션</span>
+                    <div class="back">
+                        <figure><img src="img/play_big.png" alt="재생" /></figure>
+                    </div><!-- .back end -->
+                </a><!-- .item end -->
+
+                <a href="#" class="item on">
+                    <figure><img src="img/editor3.png" alt="에디터3" /></figure>
+                    <div class="text">
+                        <p>추천선곡</p>
+                        <h3>낭만이 가득한 제주 드라이브 플리🍊</h3>
+                    </div><!-- .text end -->
+                    <span>DJ 삐삐</span>
+                    <div class="back">
+                        <figure><img src="img/play_big.png" alt="재생" /></figure>
+                    </div><!-- .back end -->
+                </a><!-- .item end -->
+
+                <a href="#" class="item on">
+                    <figure><img src="img/editor4.jpg" alt="에디터4" /></figure>
+                    <div class="text">
+                        <p>추천선곡</p>
+                        <h3>예쁘게 물든 선유도 공원의 가을 위에서🍁</h3>
+                    </div><!-- .text end -->
+                    <span>DJ 157</span>
+                    <div class="back">
+                        <figure><img src="img/play_big.png" alt="재생" /></figure>
+                    </div><!-- .back end -->
+                </a><!-- .item end -->
+
+                <a href="#" class="item">
+                    <figure><img src="img/editor5.jpg" alt="에디터5" /></figure>
+                    <div class="text">
+                        <p>재즈의 새로운 고전 : Wayne Shorter</p>
+                        <h3>팝-퓨전 시대에 새로운 예술적 비전 제시한 역작</h3>
+                    </div><!-- .text end -->
+                    <span>MM JAZZ</span>
+                    <div class="back">
+                        <figure><img src="img/play_big.png" alt="재생" /></figure>
+                    </div><!-- .back end -->
+                </a><!-- .item end -->
+
+                <a href="#" class="item">
+                    <figure><img src="img/editor6.jpg" alt="에디터6" /></figure>
+                    <div class="text">
+                        <p>전설이 된 래퍼들, 폭력에 반대하다.</p>
+                        <h3>힙합사의 결정적인 순간을 장식한 싱글들 70화</h3>
+                    </div><!-- .text end -->
+                    <span>힙알사전</span>
+                    <div class="back">
+                        <figure><img src="img/play_big.png" alt="재생" /></figure>
+                    </div><!-- .back end -->
+                </a><!-- .item end -->
+
+                <a href="#" class="item">
+                    <figure><img src="img/editor7.png" alt="에디터7" /></figure>
+                    <div class="text">
+                        <p>추천선곡</p>
+                        <h3>늦은 밤🌙 혼자 듣고 싶은 잔잔한 POP</h3>
+                    </div><!-- .text end -->
+                    <span>DJ 란나</span>
+                    <div class="back">
+                        <figure><img src="img/play_big.png" alt="재생" /></figure>
+                    </div><!-- .back end -->
+                </a><!-- .item end -->
+
+                <a href="#" class="item">
+                    <figure><img src="img/editor8.jpg" alt="에디터8" /></figure>
+                    <div class="text">
+                        <p>그리고 청각을 위한 불꽃놀이!</p>
+                        <h3>베를린 필하모닉 오보에 수석 알브레히트 마이어 10년 만의 조우</h3>
+                    </div><!-- .text end -->
+                    <span>클래식 공감</span>
+                    <div class="back">
+                        <figure><img src="img/play_big.png" alt="재생" /></figure>
+                    </div><!-- .back end -->
+                </a><!-- .item end -->
+
+            </div><!-- .list end -->
+
+            <p class="view">추천 더보기 ∨</em></p>
+
+        </div><!-- .inner end -->
+    </section><!-- .editor end -->
+
+
+
+
+
+    <footer>
+        <div class="inner">
+            <ul class="menu">
+                <li><a href="#">회사소개</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">청소년보호정책</a></li>
+                <li><a href="#">위치기반 서비스 이용약관</a></li>
+                <li><a href="#">이메일주소무단수집거부</a></li>
+                <li><a href="#">서비스 이용문의</a></li>
+                <li><a href="#">제휴 문의</a></li>
+            </ul><!-- .menu end -->
+
+            <div class="icon">
+                <figure class="logo"><a href="#"><img src="img/logo_company.svg" alt="푸터로고" /></a></figure>
+                <figure><a href="#"><img src="img/youtube.png" alt="유튜브" /></a></figure>
+                <figure><a href="#"><img src="img/blog.png" alt="블로그" /></a></figure>
+                <figure><a href="#"><img src="img/facebook.png" alt="페이스북" /></a></figure>
+            </div><!-- .icon end -->
+
+            <ul class="company">
+                <li>대표이사 박현진</li>
+                <li>서울특별시 강남구 강남대로 456, 4-9층(역삼동, 한석타워)</li>
+                <li>사업자등록번호 314-81-03453</li>
+                <li>통신판매업신고 2013-서울강남-01302</li>
+                <li>개인정보보호책임자 홍세희 본부장</li>
+                <li>호스팅 제공자 (주)지니뮤직</li>
+            </ul><!-- .company end -->
+
+            <p>서비스문의 1577-5337 / help@ktmusic.co.kr</p>
+
+            <p>COPYRIGHTⓒ GENIE MUSIC CORP ALL RIGHTS RESERVED.</p>
+
+        </div><!-- .inner end -->
+    </footer>
+
+</body>
+
+</html>

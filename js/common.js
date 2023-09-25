@@ -29,6 +29,7 @@ $(function(){
     
       $('header .search_close').click(function () {
         $('header .search_tab').removeClass('on');
+        $('body').removeClass('on');
       });
     
       $('header .search_tab > ul li').click(function () {

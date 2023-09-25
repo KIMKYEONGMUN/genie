@@ -278,8 +278,10 @@ section {
     width: 60%;
 }
 .chart .inner .list .right .rightList .item .song h3 {
+    width: 80%;
     margin-right: 15px;
     font-size: 18px;
+    line-height: 1.2;
 }
 .chart .inner .list .right .rightList .item .song figure {
     width: 30px;
@@ -291,6 +293,7 @@ section {
 }
 .chart .inner .list .right .rightList .item > p {
     color: #999;
+    line-height: 1.2;
 }
 .chart .inner .list .right .rightList .item .invisible {
     display: none;

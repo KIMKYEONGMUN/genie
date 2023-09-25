@@ -131,7 +131,7 @@ img {
     right: 40px;
     bottom: 40px;
     cursor: pointer;
-    z-index: 12;
+    z-index: 2;
     display: none;
 }
 .top:hover {
@@ -152,7 +152,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 11;
+    z-index: 3;
 }
 header .inner {
     max-width: 1440px;
@@ -309,7 +309,7 @@ nav {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 13;
+    z-index: 4;
     overflow: scroll;
     display: none;
 }
@@ -367,6 +367,7 @@ nav .inner > ul .depth1 .depth2 li {
     display: inline-block;
     padding-right: 20px;
     margin-right: 20px;
+    margin-bottom: 5px;
     position: relative;
     line-height: 1.5;
 }
@@ -431,14 +432,19 @@ footer .inner .menu li a:hover {
 }
 footer .inner .icon {
     margin-bottom: 40px;
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
 }
 footer .inner .icon a {
     display: inline-block;
-    margin-right: 10px;
 }
-footer .inner .icon a.logo {
+footer .inner .icon .left {
     margin-right: 20px;
     margin-bottom: 10px;
+}
+footer .inner .icon .right a {
+    margin-right: 10px;
 }
 footer .inner .icon a:hover svg path {
     fill: #0096ff;
@@ -598,6 +604,14 @@ footer .inner > p {
 }
 
 @media screen and (max-width: 414px) {
+    .top {
+        right: 20px;
+        bottom: 20px;
+    }
+
+
+
+
     header .inner {
         justify-content: center;
     }

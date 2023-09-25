@@ -576,3 +576,38 @@ footer .inner > p {
     }
 
 }
+
+@media screen and (max-width: 687px) {
+    header .inner .center .search .search_bar input[type="text"] {
+        width: 250px;
+    }
+
+
+
+
+
+    footer {
+        font-size: 12px;
+    }
+
+}
+
+@media screen and (max-width: 414px) {
+    header .inner {
+        justify-content: center;
+    }
+    header .inner figure:first-child {
+        position: absolute;
+        top: 24px;
+        left: 0;
+    }
+    header .inner figure:last-child {
+        position: absolute;
+        top: 24px;
+        right: 0;
+    }
+    header .inner .center .search .search_bar input[type="text"] {
+        width: 200px;
+    }
+
+}

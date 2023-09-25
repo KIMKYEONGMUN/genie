@@ -18,6 +18,8 @@ section {
 }
 .title {
     display: flex;
+    justify-content: left;
+    align-items: center;
     margin-bottom: 80px;
 }
 .title h2 {
@@ -58,25 +60,27 @@ section {
 .inner .title ul {
     display: flex;
     font-size: 18px;
-    position: relative;
-}
-.inner .title ul::before {
-    content: '';
-    width: 1px;
-    height: 80%;
-    background-color: #999;
-    position: absolute;
-    left: 50%;
 }
 .inner .title ul li {
     color: #999;
+    margin: 0 20px;
     cursor: pointer;
 }
 .inner .title ul li.on {
     color: #0096ff;
 }
 .inner .title ul li:first-child {
-    margin-right: 40px;
+    position: relative;
+}
+.inner .title ul li:first-child::after {
+    content: '';
+    width: 1px;
+    height: 80%;
+    background-color: #999;
+    position: absolute;
+    top: 50%;
+    right: -20px;
+    transform: translateY(-50%);
 }
 
 
@@ -754,4 +758,73 @@ section {
         color: #0096ff;
     }
 
+}
+
+@media screen and (max-width: 687px) {
+    .title {
+        display: block;
+    }
+    .title h2 {
+        margin-bottom: 40px;
+    }
+
+
+
+
+
+    .chart .inner .list .right .rightList .item > span {
+        font-size: 16px;
+    }
+    .chart .inner .list .right .rightList .item .song {
+        width: 50%;
+    }
+    .chart .inner .list .right .rightList .item .song h3 {
+        font-size: 14px;
+    }
+    .chart .inner .list .right .rightList .item > p {
+        width: 40%;
+        font-size: 12px;
+    }
+
+
+
+
+
+    .video .inner .item {
+        width: 100%;
+    }
+
+
+
+
+
+    .editor .inner .list .item {
+        width: calc((100% - 24px) / 2);
+    }
+
+}
+
+@media screen and (max-width: 414px) {
+    .title h2 {
+        font-size: 20px;
+    }
+
+
+
+
+
+    .chart .inner .list .right .rightList .item > span {
+        margin-right: 5px;
+    }
+    .chart .inner .list .right .rightList .item > p {
+        width: 30%;
+    }
+
+
+
+
+
+    .editor .inner .list .item {
+        width: calc(100%);
+    }
 }

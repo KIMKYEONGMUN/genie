@@ -213,14 +213,6 @@ $(function () {
 
 
 
-  // if ($(window).width() < 960) {
-  //   $('.video .listA .item').eq(2).removeClass('on');
-  // }
-
-
-
-
-
   if ($(window).width() > 960) {
     let videoRow = 3;
     let i = 0;
@@ -308,9 +300,7 @@ $(function () {
       };
     });
 
-  } else {
-      // $('.video .listA .item').eq(2).removeClass('on');
-
+  } else if ($(window).width() > 687) {
       let videoRow = 2;
       let i = 0;
       let videoItemA = $('.video .listA .item');
@@ -400,6 +390,94 @@ $(function () {
         };
       });
 
+  } else {
+    let videoRow = 2;
+      let i = 0;
+      let videoItemA = $('.video .listA .item');
+      let currentA = $('.video .listA .num_current');
+      let allA = $('.video .listA .num_all');
+      let prevA = $('.video .listA .prev');
+      let nextA = $('.video .listA .next');
+
+      videoItemA.eq(videoRow).removeClass('on');
+
+      allA.text(videoItemA.length / videoRow);
+
+      prevA.click(function () {
+        i--;
+        if (i < 0) {
+          i = videoItemA.length / videoRow - 1;
+        };
+        currentA.text(i + 1);
+        videoItemA.removeClass('on');
+        videoItemA.eq(i * videoRow).addClass('on');
+        videoItemA.eq(i * videoRow + 1).addClass('on');
+      });
+      nextA.click(function () {
+        i++;
+        if (i >= videoItemA.length / videoRow) {
+          i = 0;
+        };
+        currentA.text(i + 1);
+        videoItemA.removeClass('on');
+        videoItemA.eq(i * videoRow).addClass('on');
+        videoItemA.eq(i * videoRow + 1).addClass('on');
+      });
+
+      let j = 0;
+      let videoItemB = $('.video .listB .item');
+      let currentB = $('.video .listB .num_current');
+      let allB = $('.video .listB .num_all');
+      let prevB = $('.video .listB .prev');
+      let nextB = $('.video .listB .next');
+
+      videoItemB.eq(videoRow).removeClass('on');
+
+      allB.text(videoItemB.length / videoRow);
+
+      prevB.click(function () {
+        j--;
+        if (j < 0) {
+          j = videoItemB.length / videoRow - 1;
+        };
+        currentB.text(j + 1);
+        videoItemB.removeClass('on');
+        videoItemB.eq(j * videoRow).addClass('on');
+        videoItemB.eq(j * videoRow + 1).addClass('on');
+      });
+      nextB.click(function () {
+        j++;
+        if (j >= videoItemB.length / videoRow) {
+          j = 0;
+        };
+        currentB.text(j + 1);
+        videoItemB.removeClass('on');
+        videoItemB.eq(j * videoRow).addClass('on');
+        videoItemB.eq(j * videoRow + 1).addClass('on');
+      });
+
+
+
+
+
+      let editorRow = 2;
+      let editorItem = $('.editor .item');
+      let view = $('.editor .view');
+
+      editorItem.eq(editorRow).removeClass('on');
+      editorItem.eq(editorRow + 1).removeClass('on');
+
+      view.click(function () {
+        if (view.text() == '추천 더보기 ∨') {
+          view.text('접기 ∧');
+          editorItem.eq(editorRow).addClass('on');
+          editorItem.eq(editorRow + 1).addClass('on');
+        } else {
+          view.text('추천 더보기 ∨');
+          editorItem.eq(editorRow).removeClass('on');
+          editorItem.eq(editorRow + 1).removeClass('on');
+        };
+      });
   }
 
 
@@ -494,7 +572,7 @@ $(function () {
         };
       });
 
-    } else {
+    } else if (window.outerWidth > 687) {
         let videoRow = 2;
         let i = 0;
         let videoItemA = $('.video .listA .item');
@@ -575,6 +653,88 @@ $(function () {
             editorItem.eq(editorRow).removeClass('on');
             editorItem.eq(editorRow + 1).removeClass('on');
             editorItem.eq(editorRow + 2).removeClass('on');
+          };
+        });
+
+    } else {
+      let videoRow = 2;
+        let i = 0;
+        let videoItemA = $('.video .listA .item');
+        let currentA = $('.video .listA .num_current');
+        let allA = $('.video .listA .num_all');
+        let prevA = $('.video .listA .prev');
+        let nextA = $('.video .listA .next');
+
+        allA.text(videoItemA.length / videoRow);
+
+        prevA.click(function () {
+          i--;
+          if (i < 0) {
+            i = videoItemA.length / videoRow - 1;
+          };
+          currentA.text(i + 1);
+          videoItemA.removeClass('on');
+          videoItemA.eq(i * videoRow).addClass('on');
+          videoItemA.eq(i * videoRow + 1).addClass('on');
+        });
+        nextA.click(function () {
+          i++;
+          if (i >= videoItemA.length / videoRow) {
+            i = 0;
+          };
+          currentA.text(i + 1);
+          videoItemA.removeClass('on');
+          videoItemA.eq(i * videoRow).addClass('on');
+          videoItemA.eq(i * videoRow + 1).addClass('on');
+        });
+
+        let j = 0;
+        let videoItemB = $('.video .listB .item');
+        let currentB = $('.video .listB .num_current');
+        let allB = $('.video .listB .num_all');
+        let prevB = $('.video .listB .prev');
+        let nextB = $('.video .listB .next');
+
+        allB.text(videoItemB.length / videoRow);
+
+        prevB.click(function () {
+          j--;
+          if (j < 0) {
+            j = videoItemB.length / videoRow - 1;
+          };
+          currentB.text(j + 1);
+          videoItemB.removeClass('on');
+          videoItemB.eq(j * videoRow).addClass('on');
+          videoItemB.eq(j * videoRow + 1).addClass('on');
+        });
+        nextB.click(function () {
+          j++;
+          if (j >= videoItemB.length / videoRow) {
+            j = 0;
+          };
+          currentB.text(j + 1);
+          videoItemB.removeClass('on');
+          videoItemB.eq(j * videoRow).addClass('on');
+          videoItemB.eq(j * videoRow + 1).addClass('on');
+        });
+
+
+
+
+
+        let editorRow = 2;
+        let editorItem = $('.editor .item');
+        let view = $('.editor .view');
+
+        view.click(function () {
+          if (view.text() == '추천 더보기 ∨') {
+            view.text('접기 ∧');
+            editorItem.eq(editorRow).addClass('on');
+            editorItem.eq(editorRow + 1).addClass('on');
+          } else {
+            view.text('추천 더보기 ∨');
+            editorItem.eq(editorRow).removeClass('on');
+            editorItem.eq(editorRow + 1).removeClass('on');
           };
         });
 

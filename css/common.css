@@ -629,6 +629,9 @@ footer .inner > p {
 
 
 
+    header {
+        height: 60px;
+    }
     header .inner > figure {
         margin-right: 10px;
     }
@@ -638,6 +641,9 @@ footer .inner > p {
     }
     header .inner .right figure.user {
     margin-left: 10px;
+    }
+    header .inner .center .search {
+        top: 60px;
     }
     header .inner .center .search .search_bar input[type="text"] {
         width: 220px;

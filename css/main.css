@@ -816,6 +816,14 @@ section {
 
 
 
+    .main_visual {
+        padding-top: 100px;
+    }
+
+
+
+
+
     .chart .inner .list .right .rightList .item > span {
         margin-right: 5px;
     }

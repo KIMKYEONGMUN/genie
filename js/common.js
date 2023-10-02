@@ -64,4 +64,12 @@ $(function(){
         $('nav').removeClass('on');
       });
 
-});//jquery end
+
+
+
+
+      $('.icon_search').click(function(){
+        $('.search').stop().slideToggle();
+      });
+
+});// jquery end

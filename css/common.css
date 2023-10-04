@@ -104,6 +104,7 @@
 body {
     color: #333;
     font-family: 'S-Core Dream';
+    word-break: keep-all;
 }
 a {
     text-decoration: none;

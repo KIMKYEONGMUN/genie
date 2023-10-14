@@ -1,9 +1,9 @@
 $(function(){
     $(window).scroll(function () {
         if ($(window).scrollTop() > $('.chart').offset().top / 2) {
-          $('.top').css('display', 'block');
+          $('.top').show();
         } else {
-          $('.top').css('display', 'none');
+          $('.top').hide();
         };
       });
     
@@ -70,6 +70,14 @@ $(function(){
 
       $('.icon_search').click(function(){
         $('.search').stop().slideToggle();
+      });
+
+      $(window).resize(function () {
+        if (window.outerWidth > 960) {
+          $('.search').stop().show();
+        } else {
+          $('.search').stop().hide();
+        };
       });
 
 });// jquery end

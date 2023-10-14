@@ -74,9 +74,7 @@ $(function(){
 
       $(window).resize(function () {
         if (window.outerWidth > 960) {
-          $('.search').show();
-        } else {
-          $('.search').hide();
+          $('.search').stop().show();
         };
       });
 

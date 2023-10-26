@@ -230,7 +230,7 @@ section {
     margin: 60px 0 50px;
 }
 .chart .inner .list .left .album .art .back figure img {
-    object-fit: 100%;
+    object-fit: fill;
 }
 .chart .inner .list .left .album .art .back p {
     margin-bottom: 40px;
@@ -289,7 +289,7 @@ section {
     cursor: pointer;
 }
 .chart .inner .list .right .rightList .item .song figure img {
-    object-fit: 100%;
+    object-fit: fill;
 }
 .chart .inner .list .right .rightList .item > p {
     color: #999;
@@ -390,7 +390,7 @@ section {
     margin: 35px 0 10px;
 }
 .update .art .back figure img {
-    object-fit: 100%;
+    object-fit: fill;
 }
 .update .art .back p {
     margin-bottom: 10px;
@@ -453,7 +453,7 @@ section {
     cursor: pointer;
 }
 .video .inner .count .prev img {
-    object-fit: 100%;
+    object-fit: fill;
 }
 .video .inner .count > p .num_current {
     color: #0096ff;
@@ -465,7 +465,7 @@ section {
     cursor: pointer;
 }
 .video .inner .count .next img {
-    object-fit: 100%;
+    object-fit: fill;
 }
 .video .inner .listA {
     width: 100%;

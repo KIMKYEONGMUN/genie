@@ -173,7 +173,7 @@ header .inner > figure {
     cursor: pointer;
 }
 header .inner > figure img {
-    object-fit: 100%;
+    object-fit: fill;
 }
 header .inner .center {
     display: flex;
@@ -314,7 +314,7 @@ header .inner .right figure.user {
     cursor: pointer;
 }
 header .inner .right figure img {
-    object-fit: 100%;
+    object-fit: fill;
 }
 
 
